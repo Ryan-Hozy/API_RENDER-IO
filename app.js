@@ -113,7 +113,7 @@ app.delete('/booking/:id', async (req, res) => {
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/index.html'));
+  res.status(200).json({ message: "Welcome to the booking API"});
 });
 
 app.listen(3000, () => {
